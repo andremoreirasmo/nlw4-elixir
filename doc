@@ -1,0 +1,9 @@
+Criar banco
+mix ecto.create
+mix ecto.migrate
+
+Iniciar servico
+mix phx.server
+
+Rodar testes
+mix test
