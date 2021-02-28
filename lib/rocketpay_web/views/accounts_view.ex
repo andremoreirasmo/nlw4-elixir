@@ -1,4 +1,4 @@
-defmodule RocketpayWeb.AccountssView do
+defmodule RocketpayWeb.AccountsView do
   use RocketpayWeb, :view
 
   alias Rocketpay.Account

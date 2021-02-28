@@ -40,7 +40,7 @@ defmodule Rocketpay.Accounts.Deposit do
     params = %{balance: value}
 
     account
-    |> Account.changeset(account, params)
+    |> Account.changeset(params)
     |> repo.update()
   end
 
