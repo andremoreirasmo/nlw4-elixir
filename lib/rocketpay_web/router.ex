@@ -8,9 +8,12 @@ defmodule RocketpayWeb.Router do
   scope "/api", RocketpayWeb do
     pipe_through :api
 
-    get "/:filename", WelcomeControler, :index
+    get "/:filename", WelcomeController, :index
 
     post "/users", UsersController, :create
+
+    post "/accounts/:id/deposit", AccountsController, :deposit
+    post "/accounts/:id/withdraw", AccountsController, :withdraw
   end
 
   # Enables LiveDashboard only for development

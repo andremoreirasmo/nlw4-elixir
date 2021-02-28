@@ -7,3 +7,9 @@ mix phx.server
 
 Rodar testes
 mix test
+
+Criar migration
+mix ect.gen.migration create_account_table
+
+Abrir iex
+iex -S mix
